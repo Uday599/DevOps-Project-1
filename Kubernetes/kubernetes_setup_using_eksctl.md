@@ -32,9 +32,9 @@ You can follow same procedure in the official  AWS document [Getting started wit
 3. Create an IAM Role and attache it to EC2 instance    
    `Note: create IAM user with programmatic access if your bootstrap system is outside of AWS`   
    IAM user should have access to   
-   IAM   
-   EC2   
-   CloudFormation  
+   IAM Full Access
+   EC2 Full Access 
+   CloudFormation Full Access
    Note: Check eksctl documentaiton for [Minimum IAM policies](https://eksctl.io/usage/minimum-iam-policies/)
    
 4. Create your cluster and nodes 
@@ -51,7 +51,7 @@ You can follow same procedure in the official  AWS document [Getting started wit
       --region ap-south-1 \
    --node-type t2.small \
     ```
-
+6. this takes 20-25 min to setup the cluster
 5. To delete the EKS clsuter 
    ```sh 
    eksctl delete cluster valaxy --region ap-south-1
